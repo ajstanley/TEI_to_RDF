@@ -1,0 +1,6 @@
+; $Id$
+name = Interedition Module
+description = Demo of RDF harvesting
+dependencies[] = fedora_repository
+package = Islandora
+core = 6.x

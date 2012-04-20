@@ -1,0 +1,21 @@
+<?php
+
+function interedition_menu() {
+  $items = array();
+
+  $items['harvest/rdf'] = array(
+    'title' => 'Harvest RDF',
+    'description' => 'Produce RDF from TEI',
+    'file' => 'rdf_harvest.inc',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('tei_input_form'),
+    'access callback' => 'user_access',
+    'access arguments' => array('view content'), // Use something fedora specific.
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+
+
