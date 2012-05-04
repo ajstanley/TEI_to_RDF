@@ -5,7 +5,7 @@
       The TEI-Bare schema can be obtained from http://www.tei-c.org/
 -->
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:dct="http://purl.org/dc/terms/"
     xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xml="http://www.w3.org/XML/1998/namespace">
@@ -15,7 +15,8 @@
     <xsl:variable name="MAN_ID" select="/tei:TEI/@xml:id"/>
 
     <!-- Create a variable to store the namespace of the TEI node -->
-    <xsl:variable name="CONFORMATION" select="/tei:TEI/namespace::node()"/>
+    <!-- Thanks to Alohci at http://stackoverflow.com/questions/1319138/finding-xmlns-with-xsl-xpath -->
+    <xsl:variable name="CONFORMATION" select="/tei:TEI/namespace::*[not (name())]"/> 
 
     <xsl:template match="/">
         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -40,7 +41,7 @@
                     </xsl:if>
                 </xsl:for-each> 
                 
-                <xsl:for-each select="/tei:TEI/tei:teiHeader//tei:publicationStmt//tei:p|/tei:TEI/tei:teiHeader//tei:publicationStmt//tei:publisher">
+                <xsl:for-each select="/tei:TEI/tei:teiHeader//tei:publicationStmt//tei:p">
                     <dct:publisher>
                         <xsl:value-of select="."/>
                     </dct:publisher>
@@ -106,12 +107,11 @@
                 
                 <xsl:call-template name="get_child">
                     <xsl:with-param name="ABOUT" select="./@xml:id"></xsl:with-param>
-                    <xsl:with-param name="PARENT" select="./../@xml:id"></xsl:with-param>
+                    <xsl:with-param name="CHILD" select="./../@xml:id"></xsl:with-param>
                 </xsl:call-template> 
 
             </xsl:for-each>
         </rdf:RDF>
-
     </xsl:template>
     
     <!-- retrieve relationships to parent objects -->
@@ -129,9 +129,6 @@
                 <xsl:value-of select="$PARENT"/>
             </dct:isPartOf>
         </rdf:Description>
-        
-        
-        
     </xsl:template>
     
     <xsl:template name="get_child">
@@ -147,9 +144,6 @@
                 <xsl:value-of select="$CHILD"/>
             </dct:isPartOf>
         </rdf:Description>
-        
-        
-        
     </xsl:template>
-
+    
 </xsl:stylesheet>
