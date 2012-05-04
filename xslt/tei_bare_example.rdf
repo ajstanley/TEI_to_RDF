@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:dct="http://purl.org/dc/terms/"
-         xmlns:tei="http://www.tei-c.org/ns/1.0">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dct="http://purl.org/dc/terms/" xmlns:tei="http://www.tei-c.org/ns/1.0">
    <rdf:Description rdf:about="MSH">
       <dct:title>منتخب صوان الحكمة</dct:title>
       <dct:publisher>Sharing Ancient Wisdoms</dct:publisher>

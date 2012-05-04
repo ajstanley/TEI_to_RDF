@@ -12,10 +12,14 @@ This XSLT file is for transforming files that are marked up with TEI tags confor
 This XSLT extracts RDF triples from TEI_bare conformant documents. The vocabulary for the predicates used in these RDF triples is largely drawn from the Dublin Core model for expressing metadata information about a document (see http://dublincore.org/ ).
 
 
-xslt/tei_bare_example.xml 
+xslt/tei_bare_example.xml
 _________________________ 
 and
 
 xslt/tei_bare.rng
 -----------------
-Sample TEI-bare files, for testing
+Example TEI-bare files, for testing. We have tested using Oxygen with the Saxon 6.5.5 transformer.
+
+xslt/tei_bare_example.rdf
+-------------------------
+Example RDF output, generated during testing.
