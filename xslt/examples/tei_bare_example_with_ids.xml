@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="tei_bare.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="MSH">
+    <teiHeader xml:id="teiHeader_d1e4">
+        <fileDesc xml:id="fileDesc_d1e6">
+            <titleStmt xml:id="titleStmt_d1e8">
+                <title xml:id="title_d1e10">منتخب صوان الحكمة</title>
+            </titleStmt>
+            <publicationStmt xml:id="publicationStmt_d1e14">
+                <p xml:id="p_d1e16">Sharing Ancient Wisdoms</p>
+                <p xml:id="p_d1e19">http://www.ancientwisdoms.ac.uk</p>
+            </publicationStmt>
+            <sourceDesc xml:id="sourceDesc_d1e23">
+                <list xml:id="list_d1e25">
+                    <label xml:id="label_d1e27">country</label>
+                    <item xml:id="item_d1e30">Austria</item>
+                    <label xml:id="label_d1e33">settlement</label>
+                    <item xml:id="item_d1e36">Vienna</item>
+                    <label xml:id="label_d1e39">repository</label>
+                    <item xml:id="item_d1e43">Fachbereichsbibliothek Afrikawissenschaften und Orientalistik</item>
+                    <label xml:id="label_d1e46">idno</label>
+                    <item xml:id="item_d1e49">ArNa5o</item>
+                </list>
+            </sourceDesc>
+            <sourceDesc xml:id="sourceDesc_d1e54">
+                <p xml:id="p_d1e56">Incomplete version of Abū Sulaimān as-Sijistānīs collection of Greek wisdoms</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text xml:id="text_d1e62">
+        <body xml:id="body_d1e64">
+            <div xml:id="div_d1e66">
+                <head xml:id="head_d1e68">Thales of Miletus </head>
+                <div xml:id="Thales_tr">
+                    <p xml:id="Th_tr_n1"> He was the first who started philosophy, and due to him a
+                        group of the Greeks was called philosophers. He [caused] a significant
+                        revolution for philosophy. This man practiced philosophy in Egypt and he
+                        came to Miletus. He was a sage. Only a few of his sayings still exist due to
+                        the progression and the passing of an extended period of time. This is what
+                        he said: </p>
+                    <p xml:id="Th_tr_s1"> The truth is not praiseworthy, but rather it is praised
+                        because it is more elevated and higher than the praise(worthy), and yet we
+                        praise the things which, when performed, can tend either to the good or the
+                        bad. </p>
+                    <p xml:id="Th_tr_n2"> He said: </p>
+                    <p xml:id="Th_tr_s2"> The most dishonourable things are: An oath sworn in truth,
+                        but nevertheless causing disgrace, an insult of an incapable person, anger
+                        as a result of narrow mindedness, and regret about a past failure. </p>
+                    <p xml:id="Th_tr_n3"> He said: </p>
+                    <p xml:id="Th_tr_s3"> Whoever performs an action in secret, yet is embarrassed
+                        by it in public, is a worthless person. </p>
+                    <p xml:id="Tha_tr_n4"> He said: </p>
+                    <p xml:id="Th_tr_s4"> He who does not feel that there is a rational soul inside
+                        him, but just feels that he is wearing a mortal body, is an animal and
+                        necessarily concerned by what animals do, and he who feels that there is an
+                        immortal rational soul inside him must not be concerned by what animals do,
+                        but is obliged to imitate the acts of God, the sublime. </p>
+                    <p xml:id="Th_tr_n5"> He was asked: </p>
+                    <p xml:id="Th_tr_s5"> Why are those who do something bad punished for their
+                        deeds, whereas those who (only) intend to do something bad are not
+                        (punished)? </p>
+                    <p xml:id="Th_tr_n6"> And he said: </p>
+                    <p xml:id="Th_tr_s6"> Intended on the part of man is not that he does not think,
+                        but that he does not do the bad thing he is thinking of. </p>
+                    <p xml:id="Th_tr_n7"> He was asked: </p>
+                    <p xml:id="Th_tr_s7"> Which living creature does not become satisfied? </p>
+                    <p xml:id="Th_tr_n8"> And he said: </p>
+                    <p xml:id="Th_tr_s8"> The human being that profits. </p>
+                    <p xml:id="Th_tr_n9"> He said: </p>
+                    <p xml:id="Th_tr_s9"> In great distress is he to whom the severity of the
+                        sincere advisor appears to be less important than the softness of the
+                        flattering secret enemy. </p>
+                    <p xml:id="Th_tr_n10"> And he said: </p>
+                    <p xml:id="Th_tr_s10"> If you exhort a sinner, treat him gently so that he does
+                        not manifest open (hostility). </p>
+                    <p xml:id="Th_tr_n11"> He said: </p>
+                    <p xml:id="Th_tr_s11"> Be more afraid of someone who perfidiously conceals (the
+                        truth) from you than of someone who openly reveals (it), because the
+                        treatment of apparent diseases is easier than the treatment of what has
+                        become invisible and hidden. </p>
+                    <p xml:id="Th_tr_n12"> He said: </p>
+                    <p xml:id="Th_tr_s12"> Someone who gives you something bitter to drink so that
+                        you recover is more sympathetic than someone who pours something sweet down
+                        your throat so that you become ill, and someone who scares you so that you
+                        escape to safety is more honest with you than someone who stays friendly
+                        until you (suddenly) find yourself in danger. </p>
+                    <p xml:id="Th_tr_n13"> It was said to him: </p>
+                    <p xml:id="Th_tr_s13"> Remove/Dispel this grief from your heart! </p>
+                    <p xml:id="Th_tr_n14"> And he said: </p>
+                    <p xml:id="Th_tr_s14"> It did not enter with my permission. </p>
+                    <p xml:id="Th_tr_n15"> He was asked about his state (of health), after he had
+                        become senile, and he said: </p>
+                    <p xml:id="Th_tr_s15"> It is so: I am dying slowly. </p>
+                    <p xml:id="Th_tr_n16"> He said: </p>
+                    <p xml:id="Th_tr_s16"> The (true) word that is irrefutable is the Creator and
+                        not something created. He creates what is created, and he has no form in
+                        himself, for there was only him before creation. If only he exists, it is
+                        not said at a certain moment that such and such (exists) except him and how
+                        he is, through what he is and why he is, is (all) inside him. Creation is to
+                        make something existent from something that does not exist. If something is
+                        made existent (at all), then making it existent is never like the Maker (of
+                        this existent), but like what is outside him. There is no doubt that there
+                        is definitely no form for what is made existent, and (what is made existent)
+                        does not give existence. And if it is him who makes the things existent,
+                        then making existent is not from something preexistent. The non-existent
+                        thing is what is made existent and not what gives existence. If this is the
+                        case, then he who makes the things existent does not need to have the form
+                        of something because of his existence, or else, if there is a (single) form
+                        with him, it would be necessary that he was connected with the form[s] that
+                        is with him. For the forms that would be with him would be eternally and
+                        separately existing. There is no doubt that he who is connected with those
+                        forms would be the first creation if the forms reached infinity. So it
+                        cannot be that there are forms with him, otherwise he would not be the
+                        creator. </p>
+                </div>
+            </div>
+        </body>
+    </text>
+</TEI>

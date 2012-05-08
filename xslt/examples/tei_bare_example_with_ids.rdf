@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dct="http://purl.org/dc/terms/" xmlns:tei="http://www.tei-c.org/ns/1.0">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:tei="http://www.tei-c.org/ns/1.0">
    <rdf:Description rdf:about="MSH">
       <dct:title>منتخب صوان الحكمة</dct:title>
       <dct:publisher>Sharing Ancient Wisdoms</dct:publisher>
@@ -7,33 +9,34 @@
       <dct:sourceDescription>Incomplete version of Abū Sulaimān as-Sijistānīs collection of Greek wisdoms</dct:sourceDescription>
       <dct:type>TEI/XML</dct:type>
       <dct:conformsTo>http://www.tei-c.org/ns/1.0</dct:conformsTo>
+      <dct:hasPart>body_d1e64</dct:hasPart>
    </rdf:Description>
-   <rdf:Description rdf:about="">
-      <dct:isPartOf/>
+   <rdf:Description rdf:about="list_d1e25">
+      <dct:isPartOf>sourceDesc_d1e23</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="">
-      <dct:isPartOf/>
+   <rdf:Description rdf:about="item_d1e30">
+      <dct:isPartOf>list_d1e25</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="">
-      <dct:isPartOf/>
+   <rdf:Description rdf:about="item_d1e36">
+      <dct:isPartOf>list_d1e25</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="">
-      <dct:isPartOf/>
+   <rdf:Description rdf:about="item_d1e43">
+      <dct:isPartOf>list_d1e25</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="">
-      <dct:isPartOf/>
+   <rdf:Description rdf:about="item_d1e49">
+      <dct:isPartOf>list_d1e25</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="">
-      <dct:isPartOf/>
+   <rdf:Description rdf:about="body_d1e64">
+      <dct:isPartOf>text_d1e62</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="">
-      <dct:isPartOf/>
+   <rdf:Description rdf:about="div_d1e66">
+      <dct:isPartOf>body_d1e64</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="">
-      <dct:isPartOf/>
+   <rdf:Description rdf:about="head_d1e68">
+      <dct:isPartOf>div_d1e66</dct:isPartOf>
    </rdf:Description>
    <rdf:Description rdf:about="Thales_tr">
-      <dct:isPartOf/>
+      <dct:isPartOf>div_d1e66</dct:isPartOf>
    </rdf:Description>
    <rdf:Description rdf:about="Th_tr_n1">
       <dct:isPartOf>Thales_tr</dct:isPartOf>
@@ -131,17 +134,17 @@
    <rdf:Description rdf:about="Th_tr_s16">
       <dct:isPartOf>Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="">
-      <dct:isPartOf/>
+   <rdf:Description rdf:about="div_d1e66">
+      <dct:isPartOf>body_d1e64</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="">
-      <dct:isPartOf/>
-   </rdf:Description>
-   <rdf:Description rdf:about="Thales_tr">
-      <dct:isPartOf/>
+   <rdf:Description rdf:about="div_d1e66">
+      <dct:isPartOf>body_d1e64</dct:isPartOf>
    </rdf:Description>
    <rdf:Description rdf:about="Thales_tr">
-      <dct:isPartOf/>
+      <dct:isPartOf>div_d1e66</dct:isPartOf>
+   </rdf:Description>
+   <rdf:Description rdf:about="Thales_tr">
+      <dct:isPartOf>div_d1e66</dct:isPartOf>
    </rdf:Description>
    <rdf:Description rdf:about="Th_tr_n1">
       <dct:isPartOf>Thales_tr</dct:isPartOf>
