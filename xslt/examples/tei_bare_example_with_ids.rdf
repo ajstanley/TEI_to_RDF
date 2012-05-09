@@ -1,341 +1,342 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:dct="http://purl.org/dc/terms/"
-         xmlns:tei="http://www.tei-c.org/ns/1.0">
-   <rdf:Description rdf:about="MSH">
+         xmlns:tei="http://www.tei-c.org/ns/1.0"
+         xmlns:doc_ns="http://www.example.com/add-default-namespace-here#">
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#pubNS:MSH">
       <dct:title>منتخب صوان الحكمة</dct:title>
       <dct:publisher>Sharing Ancient Wisdoms</dct:publisher>
       <dct:publisher>http://www.ancientwisdoms.ac.uk</dct:publisher>
       <dct:sourceDescription>Incomplete version of Abū Sulaimān as-Sijistānīs collection of Greek wisdoms</dct:sourceDescription>
       <dct:type>TEI/XML</dct:type>
       <dct:conformsTo>http://www.tei-c.org/ns/1.0</dct:conformsTo>
-      <dct:hasPart>body_d1e64</dct:hasPart>
+      <dct:hasPart>http://www.example.com/add-default-namespace-here#body_d1e64</dct:hasPart>
    </rdf:Description>
-   <rdf:Description rdf:about="list_d1e25">
-      <dct:isPartOf>sourceDesc_d1e23</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#list_d1e25">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#sourceDesc_d1e23</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="item_d1e30">
-      <dct:isPartOf>list_d1e25</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#item_d1e30">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#list_d1e25</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="item_d1e36">
-      <dct:isPartOf>list_d1e25</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#item_d1e36">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#list_d1e25</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="item_d1e43">
-      <dct:isPartOf>list_d1e25</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#item_d1e43">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#list_d1e25</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="item_d1e49">
-      <dct:isPartOf>list_d1e25</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#item_d1e49">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#list_d1e25</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="body_d1e64">
-      <dct:isPartOf>text_d1e62</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#body_d1e64">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#text_d1e62</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="div_d1e66">
-      <dct:isPartOf>body_d1e64</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#div_d1e66">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#body_d1e64</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="head_d1e68">
-      <dct:isPartOf>div_d1e66</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#head_d1e68">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#div_d1e66</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Thales_tr">
-      <dct:isPartOf>div_d1e66</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Thales_tr">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#div_d1e66</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n1">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n1">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s1">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s1">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n2">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n2">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s2">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s2">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n3">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n3">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s3">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s3">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Tha_tr_n4">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Tha_tr_n4">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s4">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s4">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n5">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n5">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s5">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s5">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n6">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n6">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s6">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s6">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n7">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n7">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s7">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s7">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n8">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n8">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s8">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s8">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n9">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n9">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s9">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s9">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n10">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n10">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s10">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s10">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n11">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n11">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s11">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s11">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n12">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n12">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s12">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s12">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n13">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n13">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s13">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s13">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n14">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n14">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s14">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s14">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n15">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n15">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s15">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s15">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n16">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n16">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s16">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s16">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="div_d1e66">
-      <dct:isPartOf>body_d1e64</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#div_d1e66">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#body_d1e64</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="div_d1e66">
-      <dct:isPartOf>body_d1e64</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#div_d1e66">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#body_d1e64</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Thales_tr">
-      <dct:isPartOf>div_d1e66</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Thales_tr">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#div_d1e66</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Thales_tr">
-      <dct:isPartOf>div_d1e66</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Thales_tr">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#div_d1e66</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n1">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n1">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n1">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n1">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s1">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s1">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s1">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s1">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n2">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n2">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n2">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n2">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s2">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s2">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s2">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s2">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n3">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n3">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n3">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n3">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s3">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s3">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s3">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s3">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Tha_tr_n4">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Tha_tr_n4">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Tha_tr_n4">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Tha_tr_n4">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s4">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s4">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s4">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s4">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n5">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n5">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n5">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n5">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s5">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s5">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s5">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s5">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n6">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n6">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n6">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n6">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s6">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s6">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s6">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s6">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n7">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n7">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n7">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n7">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s7">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s7">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s7">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s7">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n8">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n8">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n8">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n8">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s8">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s8">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s8">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s8">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n9">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n9">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n9">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n9">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s9">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s9">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s9">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s9">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n10">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n10">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n10">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n10">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s10">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s10">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s10">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s10">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n11">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n11">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n11">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n11">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s11">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s11">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s11">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s11">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n12">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n12">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n12">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n12">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s12">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s12">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s12">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s12">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n13">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n13">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n13">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n13">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s13">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s13">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s13">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s13">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n14">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n14">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n14">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n14">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s14">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s14">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s14">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s14">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n15">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n15">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n15">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n15">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s15">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s15">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s15">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s15">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n16">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n16">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_n16">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_n16">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s16">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s16">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
-   <rdf:Description rdf:about="Th_tr_s16">
-      <dct:isPartOf>Thales_tr</dct:isPartOf>
+   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#Th_tr_s16">
+      <dct:isPartOf>http://www.example.com/add-default-namespace-here#Thales_tr</dct:isPartOf>
    </rdf:Description>
 </rdf:RDF>
