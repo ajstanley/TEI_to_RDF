@@ -9,6 +9,8 @@ To run:
 1. Check that your document conforms to the TEI-Bare customisation of TEI, as given at http://www.tei-c.org/Guidelines/Customization/ (for convenience, the RNG schema for TEI-Bare as of May 2012 is available in the /xslt/examples folder of this repository).
 2. Apply the add-ids-to-elements XSLT to your TEI document.
 3. Apply the tei-bare-to-RDF XSLT to the document output from the previous XSL transformation.
+4. To make URIs deferenceable in the resulting RDF, perform a global search-and-replace on the resulting RDF output, to replace http://www.example.com/add-default-namespace-here# with the default namespace for where your TEI document will be published.
+(e.g. replace http://www.example.com/add-default-namespace-here# with http://www.ancientwisdoms.ac.uk/mss/docName#)
 
 MORE DETAILS
 ------------
