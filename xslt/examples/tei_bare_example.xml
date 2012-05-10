@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?oxygen RNGSchema="tei_bare.rng" type="xml"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="MSH">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="MSH"
+    xmlns:docPub="http://www.ancientwisdoms.ac.uk/mss/MSH#">
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -28,6 +29,11 @@
         </fileDesc>
     </teiHeader>
     <text>
+        <front>
+            <div>
+                <p>FRONT of document [optional, included for this example]</p>
+            </div>
+        </front>
         <body>
             <div>
                 <head>Thales of Miletus </head>
@@ -115,5 +121,10 @@
                 </div>
             </div>
         </body>
+        <back>
+            <div>
+                <p>BACK of document [optional, included for the example]</p>
+            </div>
+        </back>
     </text>
 </TEI>

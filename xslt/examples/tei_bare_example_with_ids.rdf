@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:dct="http://purl.org/dc/terms/"
-         xmlns:tei="http://www.tei-c.org/ns/1.0"
-         xmlns:doc_ns="http://www.example.com/add-default-namespace-here#">
+   xmlns:dct="http://purl.org/dc/terms/" xmlns:tei="http://www.tei-c.org/ns/1.0"
+   xmlns:doc_ns="http://www.example.com/add-default-namespace-here#">
    <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#pubNS:MSH">
       <dct:title>منتخب صوان الحكمة</dct:title>
       <dct:publisher>Sharing Ancient Wisdoms</dct:publisher>
       <dct:publisher>http://www.ancientwisdoms.ac.uk</dct:publisher>
-      <dct:sourceDescription>Incomplete version of Abū Sulaimān as-Sijistānīs collection of Greek wisdoms</dct:sourceDescription>
+      <dct:source>Incomplete version of Abū Sulaimān as-Sijistānīs collection of Greek
+         wisdoms</dct:source>
       <dct:type>TEI/XML</dct:type>
       <dct:conformsTo>http://www.tei-c.org/ns/1.0</dct:conformsTo>
+      <dct:source>
+         <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#list_d1e25">
+            <dct:isPartOf>http://www.example.com/add-default-namespace-here#sourceDesc_d1e23</dct:isPartOf>
+         </rdf:Description>
+      </dct:source>
       <dct:hasPart>http://www.example.com/add-default-namespace-here#body_d1e64</dct:hasPart>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#list_d1e25">
-      <dct:isPartOf>http://www.example.com/add-default-namespace-here#sourceDesc_d1e23</dct:isPartOf>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.example.com/add-default-namespace-here#item_d1e30">
       <dct:isPartOf>http://www.example.com/add-default-namespace-here#list_d1e25</dct:isPartOf>
