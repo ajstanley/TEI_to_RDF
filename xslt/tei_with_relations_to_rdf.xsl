@@ -9,12 +9,13 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dct="http://purl.org/dc/terms/"
     xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xml="http://www.w3.org/XML/1998/namespace"
     xmlns:saws="http://www.purl.org/saws/ontology#">
-    <!-- Add your own project-specific namespace declarations here, as we have done with the saws example -->
+    <!-- **** Add your own project-specific namespace declarations here, 
+         as we have done with the saws example -->
 
     <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
 
     <!-- Create a variable to store the manuscript ID -->
-    <xsl:variable name="MAN_ID" select="concat('pubNS:',/tei:TEI/@xml:id)"/>
+    <xsl:variable name="MAN_ID" select="/tei:TEI/@xml:id"/>
 
     <!-- Create a variable to store the namespace of the TEI node -->
     <!-- Thanks to Alohci at http://stackoverflow.com/questions/1319138/finding-xmlns-with-xsl-xpath -->
@@ -23,7 +24,12 @@
     <!-- Create a variable to store the namespace declared for RDF triples pointing to 
     locations within the TEI document - this variable should be used whenever a URI is generated 
     to point to an element in the TEI document -->
-    <xsl:variable name="DOC_PUB" select="'http://www.example.com/add-default-namespace-here#'"/>
+    <xsl:variable name="DOC_PUB">
+        <xsl:value-of select="concat('http://www.ancientwisdoms.ac.uk/mss/',$MAN_ID,'#')"/>
+    </xsl:variable>
+    <!-- **** Add your own project-specific namespace declarations here, 
+         as we have done with the ancientwisdoms.ac.uk... example -->
+
 
     <!-- Set up output document's root element. 
          Declare namespaces for rdf and for Dublin Core terms.
@@ -40,7 +46,7 @@
 
             <rdf:Description>
                 <xsl:attribute name="rdf:about">
-                    <xsl:value-of select="concat($DOC_PUB,$MAN_ID)"/>
+                    <xsl:value-of select="$DOC_PUB"/>
                 </xsl:attribute>
                 <xsl:for-each select="/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt//tei:title">
                     <dct:title>
@@ -177,27 +183,35 @@
     <xsl:template name="get_parent">
         <xsl:param name="ABOUT"> </xsl:param>
         <xsl:param name="PARENT"> </xsl:param>
-        <rdf:Description>
-            <xsl:attribute name="rdf:about">
-                <xsl:value-of select="concat($DOC_PUB,$ABOUT)"/>
-            </xsl:attribute>
-            <dct:isPartOf>
-                <xsl:value-of select="concat($DOC_PUB,$PARENT)"/>
-            </dct:isPartOf>
-        </rdf:Description>
+        <xsl:if test="$ABOUT">
+            <rdf:Description>
+                <xsl:attribute name="rdf:about">
+                    <xsl:value-of select="concat($DOC_PUB,$ABOUT)"/>
+                </xsl:attribute>
+                <xsl:if test="$PARENT">
+                    <dct:isPartOf>
+                        <xsl:value-of select="concat($DOC_PUB,$PARENT)"/>
+                    </dct:isPartOf>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
 
     <xsl:template name="get_child">
         <xsl:param name="ABOUT"> </xsl:param>
         <xsl:param name="CHILD"> </xsl:param>
-        <rdf:Description>
-            <xsl:attribute name="rdf:about">
-                <xsl:value-of select="concat($DOC_PUB,$ABOUT)"/>
-            </xsl:attribute>
-            <dct:isPartOf>
-                <xsl:value-of select="concat($DOC_PUB,$CHILD)"/>
-            </dct:isPartOf>
-        </rdf:Description>
+        <xsl:if test="$ABOUT">
+            <rdf:Description>
+                <xsl:attribute name="rdf:about">
+                    <xsl:value-of select="concat($DOC_PUB,$ABOUT)"/>
+                </xsl:attribute>
+                <xsl:if test="$CHILD">
+                    <dct:hasPart>
+                        <xsl:value-of select="concat($DOC_PUB,$CHILD)"/>
+                    </dct:hasPart>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
 
 
