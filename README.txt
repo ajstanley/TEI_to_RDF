@@ -12,6 +12,10 @@ To run:
 4. To make URIs deferenceable in the resulting RDF, perform a global search-and-replace on the resulting RDF output, to replace http://www.example.com/add-default-namespace-here# with the default namespace for where your TEI document will be published.
 (e.g. replace http://www.example.com/add-default-namespace-here# with http://www.ancientwisdoms.ac.uk/mss/docName#)
 
+If you have RDF encoded in your TEI through use of the <relation> element, use the tei-with-relations-to-rdf.xsl stylesheet in place of tei-bare-to-rdf.xsl .
+
+If your TEI makes use of project-specific namespaces, you will need to add these namespace declarations to the main XSLT before applying (tei-bare-to-rdf/tei-with-relations-to-rdf).
+
 MORE DETAILS
 ------------
 

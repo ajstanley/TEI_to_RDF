@@ -7,8 +7,10 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dct="http://purl.org/dc/terms/"
-    xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xml="http://www.w3.org/XML/1998/namespace">
-    
+    xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xml="http://www.w3.org/XML/1998/namespace"
+    xmlns:saws="http://www.purl.org/saws/ontology#">
+    <!-- Add your own project-specific namespace declarations here, as we have done with the saws example -->
+
     <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
 
     <!-- Create a variable to store the manuscript ID -->
@@ -68,7 +70,7 @@
                 <dct:conformsTo>
                     <xsl:value-of select="$CONFORMATION"/>
                 </dct:conformsTo>
-                
+
                 <!--  create structural relationships for list elements within SourceDesc tag -->
                 <xsl:for-each select="//tei:sourceDesc//tei:list">
                     <dct:source>
@@ -78,14 +80,14 @@
                         </xsl:call-template>
                     </dct:source>
                 </xsl:for-each>
-                
+
                 <xsl:for-each select="/tei:TEI//tei:body/@xml:id">
                     <dct:hasPart>
                         <xsl:value-of select="concat($DOC_PUB,.)"/>
                     </dct:hasPart>
                 </xsl:for-each>
             </rdf:Description>
-            
+
             <xsl:for-each select="//tei:sourceDesc//tei:list//tei:item">
                 <xsl:call-template name="get_parent">
                     <xsl:with-param name="ABOUT" select="./@xml:id"/>
@@ -128,6 +130,45 @@
                 </xsl:call-template>
 
             </xsl:for-each>
+
+            <!-- retrieve RDF relations from TEI text described using the relation element -->
+            <xsl:for-each select="//tei:relation">
+                <rdf:Description>
+                    <!-- Subject of RDF triple (subject-predicate-object) is the URI given in @active -->
+                    <!-- For now, assume the URI for the triple is an xml:id within the document
+                        but this could also be an external URI -->
+                    <xsl:attribute name="rdf:about">
+                        <xsl:value-of select="concat($DOC_PUB,@active)"/>
+                    </xsl:attribute>
+
+                    <!-- Predicate of RDF triple is the URI given in @rel -->
+                    <!-- SAWS is currently using @name instead of @rel as a temporary solution after schema problems with @rel -->
+                    <xsl:choose>
+                        <xsl:when test="@rel">
+                            <xsl:element name="{@rel}">
+                                <!-- Object of RDF triple is the URI given in @passive -->
+                                <!-- For now, assume the URI for the triple is an xml:id within the document
+                                    but this could also be an external URI -->
+                                <xsl:value-of select="concat($DOC_PUB,@passive)"/>
+                            </xsl:element>
+                        </xsl:when>
+                        <xsl:when test="@name">
+                            <xsl:element name="{@name}">
+                                <!-- Object of RDF triple is the URI given in @passive -->
+                                <!-- For now, assume the URI for the triple is an xml:id within the document
+                                    but this could also be an external URI -->
+                                <xsl:value-of select="concat($DOC_PUB,@passive)"/>
+                            </xsl:element>
+                        </xsl:when>
+                    </xsl:choose>
+
+                    <!-- The provenance of the RDF triple, i.e. who asserted it, is given in @resp -->
+                    <dct:provenance>
+                        <xsl:value-of select="@resp"/>
+                    </dct:provenance>
+                </rdf:Description>
+            </xsl:for-each>
+
         </rdf:RDF>
     </xsl:template>
 
@@ -158,5 +199,7 @@
             </dct:isPartOf>
         </rdf:Description>
     </xsl:template>
+
+
 
 </xsl:stylesheet>
