@@ -206,9 +206,9 @@
                     <xsl:value-of select="concat($DOC_PUB,$ABOUT)"/>
                 </xsl:attribute>
                 <xsl:if test="$CHILD">
-                    <dct:hasPart>
+                    <dct:isPartOf>
                         <xsl:value-of select="concat($DOC_PUB,$CHILD)"/>
-                    </dct:hasPart>
+                    </dct:isPartOf>
                 </xsl:if>
             </rdf:Description>
         </xsl:if>
