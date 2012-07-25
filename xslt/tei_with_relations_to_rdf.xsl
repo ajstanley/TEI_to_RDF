@@ -131,8 +131,8 @@
                 </xsl:call-template>
 
                 <xsl:call-template name="get_child">
-                    <xsl:with-param name="ABOUT" select="./@xml:id"/>
-                    <xsl:with-param name="CHILD" select="./../@xml:id"/>
+                    <xsl:with-param name="ABOUT" select="./../@xml:id"/>
+                    <xsl:with-param name="CHILD" select="./@xml:id"/>
                 </xsl:call-template>
 
             </xsl:for-each>
@@ -206,9 +206,9 @@
                     <xsl:value-of select="concat($DOC_PUB,$ABOUT)"/>
                 </xsl:attribute>
                 <xsl:if test="$CHILD">
-                    <dct:isPartOf>
+                    <dct:hasPart>
                         <xsl:value-of select="concat($DOC_PUB,$CHILD)"/>
-                    </dct:isPartOf>
+                    </dct:hasPart>
                 </xsl:if>
             </rdf:Description>
         </xsl:if>
