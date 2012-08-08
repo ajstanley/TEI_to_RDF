@@ -14,8 +14,32 @@ function interedition_menu() {
     'type' => MENU_NORMAL_ITEM,
   );
 
+  $items['show/rdf'] = array(
+    'title' => 'Transformed TEI',
+    'description' => 'RDF produced from incoming TEI',
+    'file' => 'rdf_harvest.inc',
+    'page callback' => 'show_transformed_xml',
+    'access arguments' => array('view content'), // Use something fedora specific.
+    'type' => MENU_NORMAL_ITEM,
+  );
+  $items['islandora/collection/rdf'] = array(
+    'title' => t('Create RDF'),
+    'page callback' => 'get_collection_rdf_form',
+    'type' => MENU_CALLBACK,
+    'access arguments' => array('manage collections'),
+  );
+
   return $items;
 }
 
+function interedition_islandora_collection_mangement($pid) {
+  global $user;
+  if (user_access('harvest OAI')) {
+    return l('Create RDF', "islandora/collection/rdf/$pid");
+  }
+}
 
-
+function get_collection_rdf_form($pid) {
+  module_load_include('inc', 'interedition', "rdf_harvest");
+  return drupal_get_form('tei_input_form', $pid);
+}
