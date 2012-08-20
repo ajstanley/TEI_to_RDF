@@ -116,6 +116,8 @@
             </xsl:for-each>
 
             <!-- establish relationships from paragraph elements back to body tag  -->
+            <!--  treating the current node as the child in a parent-child relationship 
+                   and constructing both isPartOf and hasPart triples-->
             <xsl:for-each select="//tei:body//tei:p | //tei:body//tei:div | //tei:author">
                 <xsl:call-template name="get_parent">
                     <xsl:with-param name="ABOUT" select="./@xml:id"/>
@@ -123,8 +125,8 @@
                 </xsl:call-template>
 
                 <xsl:call-template name="get_child">
-                    <xsl:with-param name="ABOUT" select="./@xml:id"/>
-                    <xsl:with-param name="CHILD" select="./../@xml:id"/>
+                    <xsl:with-param name="ABOUT" select="./../@xml:id"/>
+                    <xsl:with-param name="CHILD" select="./@xml:id"/> 
                 </xsl:call-template>
 
             </xsl:for-each>
@@ -132,31 +134,39 @@
     </xsl:template>
 
     <!-- retrieve relationships to parent objects -->
-
+    
     <xsl:template name="get_parent">
         <xsl:param name="ABOUT"> </xsl:param>
         <xsl:param name="PARENT"> </xsl:param>
-        <rdf:Description>
-            <xsl:attribute name="rdf:about">
-                <xsl:value-of select="concat($DOC_PUB,$ABOUT)"/>
-            </xsl:attribute>
-            <dct:isPartOf>
-                <xsl:value-of select="concat($DOC_PUB,$PARENT)"/>
-            </dct:isPartOf>
-        </rdf:Description>
+        <xsl:if test="$ABOUT">
+            <rdf:Description>
+                <xsl:attribute name="rdf:about">
+                    <xsl:value-of select="concat($DOC_PUB,$ABOUT)"/>
+                </xsl:attribute>
+                <xsl:if test="$PARENT">
+                    <dct:isPartOf>
+                        <xsl:value-of select="concat($DOC_PUB,$PARENT)"/>
+                    </dct:isPartOf>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
-
+    
     <xsl:template name="get_child">
         <xsl:param name="ABOUT"> </xsl:param>
         <xsl:param name="CHILD"> </xsl:param>
-        <rdf:Description>
-            <xsl:attribute name="rdf:about">
-                <xsl:value-of select="concat($DOC_PUB,$ABOUT)"/>
-            </xsl:attribute>
-            <dct:isPartOf>
-                <xsl:value-of select="concat($DOC_PUB,$CHILD)"/>
-            </dct:isPartOf>
-        </rdf:Description>
+        <xsl:if test="$ABOUT">
+            <rdf:Description>
+                <xsl:attribute name="rdf:about">
+                    <xsl:value-of select="concat($DOC_PUB,$ABOUT)"/>
+                </xsl:attribute>
+                <xsl:if test="$CHILD">
+                    <dct:hasPart>
+                        <xsl:value-of select="concat($DOC_PUB,$CHILD)"/>
+                    </dct:hasPart>
+                </xsl:if>
+            </rdf:Description>
+        </xsl:if>
     </xsl:template>
 
 </xsl:stylesheet>
