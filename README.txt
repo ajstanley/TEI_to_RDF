@@ -39,20 +39,12 @@ This XSLT file generates copies of TEI-compliant documents which are identical e
 
 Run this XSLT before running a TEI to RDF transform, unless you have already allocated xml:ids to every element in your TEI document. This ensures that RDF triples can point to specific parts of your document. The output of this XSLT should replace your original TEI document when published, so that the generated xml:ids exist in your published TEI.
 
+OTHER FILES:
 
-xslt/examples directory:
+xslt/examples directory: 
 ------------------------
+Contains an example TEI document which conforms to the TEI-Bare schema (also included as an RNG). Two versions of this TEI document are given: one version before running the add-ids-to-elements XSLT and one version after running this XSLT.
 
-- tei_bare_example.xml
-- tei_bare.rng
-- tei_bare_example_with_ids.xml
-- tei_bare_example_with_ids.rdf
-
-Example TEI-bare file and corresponding RNG schema, for testing. We have tested using Oxygen with the Saxon B transformer. 
-
-The tei_bare_example_with_ids.xml shows the TEI document after applying the add-ids-to-elements XSLT and before applying the tei-bare-to-rdf XSLT. 
-
-The tei_bare_example_with_ids.rdf file gives the final RDF output generated during testing.
 
 xslt/existing-tei-c-files directory:
 -----------------------------------
