@@ -6,7 +6,7 @@ This repository holds files for converting TEI/XML encoded text documents into R
 RDF output has been checked against the W3C's RDF Validation Service: http://www.w3.org/RDF/Validator/  
 
 To run: 
-1. Check that your document conforms to the TEI-Bare customisation of TEI, as given at http://www.tei-c.org/Guidelines/Customization/ (for convenience, the RNG schema for TEI-Bare as of May 2012 is available in the /xslt/examples folder of this repository).
+1. Check that your document validates against the TEI-Bare minimal customisation of TEI, as given at http://www.tei-c.org/Guidelines/Customization/ (for convenience, the RNG schema for TEI-Bare as of May 2012 is available in the /xslt/examples folder of this repository).
 2. Apply the add-ids-to-elements XSLT to your TEI document.
 3. Apply the tei-bare-to-RDF XSLT to the document output from the previous XSL transformation.
 4. To make URIs deferenceable in the resulting RDF, perform a global search-and-replace on the resulting RDF output, to replace http://www.example.com/add-default-namespace-here# with the default namespace for where your TEI document will be published.
@@ -14,7 +14,7 @@ To run:
 
 If you have RDF encoded in your TEI through use of the <relation> element, use the tei-with-relations-to-rdf.xsl stylesheet in place of tei-bare-to-rdf.xsl .
 
-If your TEI makes use of project-specific namespaces, you will need to add these namespace declarations to the main XSLT before applying (tei-bare-to-rdf/tei-with-relations-to-rdf).
+If your TEI makes use of project-specific namespaces or ID formats, you will need to add these namespace declarations in the indicated places in the XSLT before applying.
 
 MORE DETAILS
 ------------
@@ -40,11 +40,6 @@ This XSLT file generates copies of TEI-compliant documents which are identical e
 Run this XSLT before running a TEI to RDF transform, unless you have already allocated xml:ids to every element in your TEI document. This ensures that RDF triples can point to specific parts of your document. The output of this XSLT should replace your original TEI document when published, so that the generated xml:ids exist in your published TEI.
 
 OTHER FILES:
-
-xslt/examples directory: 
-------------------------
-Contains an example TEI document which conforms to the TEI-Bare schema (also included as an RNG). Two versions of this TEI document are given: one version before running the add-ids-to-elements XSLT and one version after running this XSLT.
-
 
 xslt/existing-tei-c-files directory:
 -----------------------------------
